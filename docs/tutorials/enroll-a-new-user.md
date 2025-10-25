@@ -148,11 +148,11 @@ To confirm the user was enrolled successfully, retrieve the user by their ID.
 You should see the same user information returned, confirming the user exists in the service.
 
 ## Troubleshooting 
-| Status Code              | Problem                                      | Solution                                                                                          |
-|--------------------------|----------------------------------------------|---------------------------------------------------------------------------------------------------|
-| 400 Bad Request          | Invalid JSON format or missing required fields | Verify your JSON syntax and ensure all required fields (firstName, lastName, email) are included |
-| 409 Conflict             | Email address already exists                 | Use a different email address; each user must have a unique email                                 |
-| 500 Internal Server Error | Service error                               | Check that the json-server is running and the database file is accessible                         |
+| Status Code               | Problem                                        | Solution                                                                                          |
+|---------------------------|------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| 400 Bad Request           | Invalid JSON format or missing required fields | Verify your JSON syntax and ensure all required fields (firstName, lastName, email) are included |
+| 409 Conflict              | Email address already exists                   | Use a different email address; each user must have a unique email                                 |
+| 500 Internal Server Error | Service error                                  | Check that the json-server is running and the database file is accessible                         |
 
 After doing this tutorial in Postman, you might like to repeat it in
 your favorite programming language. To do this, adapt the values from
