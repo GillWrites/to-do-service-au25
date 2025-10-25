@@ -148,6 +148,7 @@ To confirm the user was enrolled successfully, retrieve the user by their ID.
 You should see the same user information returned, confirming the user exists in the service.
 
 ## Troubleshooting 
+
 | Status Code               | Problem                                        | Solution                                                                                          |
 |---------------------------|------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | 400 Bad Request           | Invalid JSON format or missing required fields | Verify your JSON syntax and ensure all required fields (firstName, lastName, email) are included |
