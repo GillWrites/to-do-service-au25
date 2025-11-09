@@ -112,7 +112,7 @@ to store the details of a new [`user`](../api/user.md) resource in the service.
   Watching...
   ```
 
-### Step 2. Configure your postman evironment
+### Step 2. Configure your postman environment
 
 * Open the Postman app on your desktop.
 * Configure [Postman environment](https://learning.postman.com/docs/sending-requests/variables/managing-environments/) to use your local host, /localhost:3000, as the base_url.
@@ -147,6 +147,7 @@ Review the response body in the lower panel of Postman. Note that the names shou
     "lastName": "Jones",
     "firstName": "Jenny",
     "email": "jen.jones@example.com"
+    "id": 5
 }
 ```
 
