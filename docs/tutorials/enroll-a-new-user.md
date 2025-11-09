@@ -27,7 +27,11 @@ last_updated: "2025-09-03"
 
 # Tutorial: Enroll a new user
 
-The To-Do Service is a task management system where users create and manage tasks. To use the service, you must first enroll as a user. This tutorial shows you how to enroll a new user by making a **POST** request to the Users endpoint using [Postman](<https://learning.postman.com/docs/sending-requests/requests>).
+The To-Do Service is a task management system where users create and manage tasks.  
+To use the service, you must first enroll as a user. This tutorial shows you how to enroll
+a  
+new user by making a **POST** request to the Users endpoint using  
+[Postman](https://learning.postman.com/docs/sending-requests/requests).  
 
 ## What you'll learn in this tutorial
 
@@ -49,24 +53,27 @@ The `user` resource describes someone registered in the To-Do Service and includ
 
 ## Tutorial prerequisites
 
-Complete the [Before you start a tutorial](../before-you-start-a-tutorial.md) topic on the development system you'll use for the tutorial.
+Complete the [Before you start a tutorial](../before-you-start-a-tutorial.md) topic
+on the development system you'll use for the tutorial.
 
 ## Tutorial summary steps
 
 After completing the prerequisites, you'll undertake the following steps to complete the tutorial  
-**Step 1.** Start the To-Do Service on your development desktop.  
-**Step 2.** Configure your Postman environment.  
-**Step 3.** Create a new request in the Postman app.  
-**Step 4.**  Click **Send** to make the request.  
-**Step 5.** Review the response body.
+
+1. Start the To-Do Service on your development desktop.
+2. Configure your Postman environment.
+3. Create a new request in the Postman app.
+4. Click **Send** to make the request.
+5. Review the response body.
 
 ## Enroll a new user using Postman
 
-Enrolling a new user in the service requires you to use the `POST` method to store the details of a new [`user`](../api/user.md) resource in the service.
+Enrolling a new user in the service requires you to use the `POST` method
+to store the details of a new [`user`](../api/user.md) resource in the service.
 
 ### Step 1. Start the To-Do Service
 
-* Open a terminal or command prompt
+* Open a terminal or command prompt.
 * Navigate to your local To-Do Service API directory.
 
   ```shell
@@ -107,15 +114,15 @@ Enrolling a new user in the service requires you to use the `POST` method to sto
 
 ### Step 2. Configure your postman evironment
 
-* Open the Postman app on your desktop
-* Configure [Postman environment](<https://learning.postman.com/docs/sending-requests/variables/managing-environments/>) to use your local host, /localhost:3000, as the base_url.
+* Open the Postman app on your desktop.
+* Configure [Postman environment](https://learning.postman.com/docs/sending-requests/variables/managing-environments/) to use your local host, /localhost:3000, as the base_url.
 
 ### Step 3. Create a new request in the Postman app
 
-* Click **Post** from the left menu
-* Configure the request with these settings
+* Click **Post** from the left menu.
+* Configure the request with these settings:
     * **METHOD**: POST
-    * **URL**: `{{base_url}}/users`
+    * **URL**: `{base_url}/users`
     * **Headers**:
         * `Content-Type: application/json`
     * **Request body**:
@@ -139,19 +146,19 @@ Review the response body in the lower panel of Postman. Note that the names shou
 {
     "lastName": "Jones",
     "firstName": "Jenny",
-    "email": "jen.jones@example.com",
-    "id": 5
+    "email": "jen.jones@example.com"
 }
 ```
 
-### Step 4: Verify the enrollment
+### Step 6: Verify the enrollment
 
 To confirm successful user enrollment, retrieve the user by their ID.
 
 * Create a new request in Postman.
-* Set the method to [GET](<https://learning.postman.com/docs/getting-started/first-steps/sending-the-first-request/>)
-* Enter the URL: {{base_url}}/users/{id} note: as before, use the //localhost:3000 base URL, and replace {id} with the ID from the previous response.
-* Click **Send**
+* Set the method to [GET](https://learning.postman.com/docs/getting-started/first-steps/sending-the-first-request/).
+* Enter the URL: {{base_url}}/users/{id}. Note: as before, use the //localhost:3000 base URL,
+* and replace {id} with the ID from the previous response.
+* Click **Send**.
 You should see the same user information returned, confirming the user exists in the service.
 
  ```json
@@ -173,6 +180,8 @@ You should see the same user information returned, confirming the user exists in
 
 ## Next steps
 
+Now you are ready to explore more to-do-service tasks.
+
 ### - Perform more tasks  
 
 * Add a [task](add-a-new-task.md) for that user
@@ -181,7 +190,10 @@ You should see the same user information returned, confirming the user exists in
   
 ### - Explore other utilities
 
-Once you're comfortable with this tutorial, you can send the same request using programming code instead of Postman. Don't worry - the information you need - the URL, the POST method, and the user data stays the same. You're just using a different tool to send it.
+Once you're comfortable with this tutorial, you can send the same request using programming code
+ instead of Postman.
+ Don't worry - the information you need: the URL, the POST method, and the user data stays the same.
+ You're just using a different tool to send it.
 
 Here is the cURL command to get you started:
 

@@ -23,12 +23,6 @@
       "firstName": "Bill",
       "email": "b.bailey@example.com",
       "id": 4
-    },
-    {
-      "lastName": "Jones",
-      "firstName": "Jenny",
-      "email": "jen.jones@example.com",
-      "id": 5
     }
   ],
   "tasks": [
